@@ -1,12 +1,19 @@
 <template>
   <h1>Welcome</h1>
-  This page is:
-  <ul>
-    <li>Rendered to HTML.</li>
-    <li>Interactive. <Counter /></li>
-  </ul>
+  <Nav :navigation="navigation" />
 </template>
 
 <script lang="ts" setup>
-import Counter from './Counter.vue'
+import Nav from './Nav.vue'
+
+const navigation = [
+  { name: 'Home', href: '/' },
+  { name: 'Search', href: '#' },
+  {
+    name: 'Calculators',
+    children: [
+      { name: 'Blood & plasma volume', href: '#' },
+    ],
+  }
+]
 </script>

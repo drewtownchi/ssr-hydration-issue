@@ -8,6 +8,7 @@
     "server:prod": "cross-env NODE_ENV=production npm run server"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.16",
     "@types/compression": "^1.7.2",
     "@types/express": "^4.17.17",
     "@types/node": "^20.4.10",
@@ -22,7 +23,7 @@
     "typescript": "^5.1.6",
     "vite": "^4.4.9",
     "vite-plugin-ssr": "^0.4.142",
-    "vue": "^3.3.4"
+    "vue": "^3.3.5"
   },
   "type": "module"
 }
